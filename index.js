@@ -1,8 +1,10 @@
 const display = document.getElementById('clock');
-const audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3');
+const audio = new Audio('https://freesound.org/data/previews/251/251461_4146089-lq.mp3');
 audio.loop = true;
 let alarmTime = null;
 let alarmTimeout = null;
+var synth = new SpeechSynthesisUtterance("Henry's Golden Rule");
+window.speechSynthesis;
 
 function updateTime() {
     const date = new Date();
@@ -24,7 +26,9 @@ function formatTime(time) {
 }
 
 function setAlarmTime(value) {
+    console.log(value)
     alarmTime = value;
+    console.log(alarmTime)
 }
 
 function setAlarm() {
@@ -35,9 +39,14 @@ function setAlarm() {
         if (timeToAlarm > current) {
             const timeout = timeToAlarm.getTime() - current.getTime();
             alarmTimeout = setTimeout(() => audio.play(), timeout);
+            console.log(alarmTimeout)
             alert('Alarm set');
         }
     }
+}
+//2022-01-25T01:09
+function HENRY(){
+
 }
 
 function clearAlarm() {
