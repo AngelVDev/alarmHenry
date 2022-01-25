@@ -1,10 +1,13 @@
 const display = document.getElementById('clock');
 const audio = new Audio('https://freesound.org/data/previews/251/251461_4146089-lq.mp3');
+const gold = new Audio("./golden_rule.mp3")
 audio.loop = true;
 let alarmTime = null;
 let alarmTimeout = null;
-var synth = new SpeechSynthesisUtterance("Henry's Golden Rule");
-window.speechSynthesis;
+
+function golden(){
+    gold.play()
+}
 
 function updateTime() {
     const date = new Date();
@@ -46,7 +49,8 @@ function setAlarm() {
 }
 //2022-01-25T01:09
 function HENRY(){
-
+    setTimeout(golden, 12 * 100000)
+    alert("Henry's golden rule ゴゴゴゴ")
 }
 
 function clearAlarm() {
