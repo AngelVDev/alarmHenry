@@ -29,9 +29,7 @@ function formatTime(time) {
 }
 
 function setAlarmTime(value) {
-    console.log(value)
     alarmTime = value;
-    console.log(alarmTime)
 }
 
 function setAlarm() {
