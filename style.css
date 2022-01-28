@@ -46,11 +46,23 @@ body,html {
 .set-alarm {
     background-color: #ffc300;
 }
+.set-alarm:hover{
+    color:rgba(12, 12, 12,1);
+    box-shadow: 0px 0px 6px 5px #fff6d5 inset;
+}
 
 .clear-alarm {
     background-color: #003566;
 }
+.clear-alarm:hover{
+    box-shadow: 0px 0px 9px 4px #88bff3;
+}
 .HENRY {
     background-color: rgba(254, 255, 0,1) ;
     color: rgba(12, 12, 12,1);
+}
+.HENRY:hover{
+    background-color: rgba(12, 12, 12,1);
+    color: rgba(254, 255, 0,1);
+    box-shadow: 0px 0px 60px 15px #ffc300;
 }
