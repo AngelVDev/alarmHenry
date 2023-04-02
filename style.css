@@ -1,68 +1,64 @@
-body,html {
-    margin: 0;
-    padding: 0;
-    background-color: #000814;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #15031b;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#clock {
-    font-family: 'Roboto Slab', 'regular 400';
-    font-size: 12vw;
-    background-image: linear-gradient(180deg,
-        rgba(255, 255, 255,1) 0%,
-        rgba(254, 255, 0,1) 50%,
-        rgba(12, 12, 12,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+#clockSelf {
+  font-family: "Roboto Slab", "regular 400";
+  font-size: 12vw;
+  background-image: linear-gradient(
+    180deg,
+    rgb(111, 238, 255) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(17, 160, 222) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.miniContainer {
+  display: flex;
+  padding: 2.4rem;
+  background-color: #bb00ff25;
+  border-radius: 5px;
+  margin: 0.75rem 0 0.75rem 0;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.controls {
-    margin-top: 16px;
+.clock {
+  font-family: "Roboto Slab", "regular 400";
+  font-size: 5vw;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(235, 255, 179) 50%,
+    rgba(12, 12, 12, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-
-.button {
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    padding: 4px 8px;
-    margin-left: 4px;
-    cursor: pointer;
-}
-
-.set-alarm {
-    background-color: #ffc300;
-}
-.set-alarm:hover{
-    color:rgba(12, 12, 12,1);
-    box-shadow: 0px 0px 6px 5px #fff6d5 inset;
-}
-
-.clear-alarm {
-    background-color: #003566;
-}
-.clear-alarm:hover{
-    box-shadow: 0px 0px 9px 4px #88bff3;
-}
-.HENRY {
-    background-color: rgba(254, 255, 0,1) ;
-    color: rgba(12, 12, 12,1);
-}
-.HENRY:hover{
-    background-color: rgba(12, 12, 12,1);
-    color: rgba(254, 255, 0,1);
-    box-shadow: 0px 0px 60px 15px #ffc300;
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: antiquewhite;
 }

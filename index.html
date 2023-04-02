@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta text= "This is a Jojo reference, but not everything.">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta text="This is a Jojo reference, but not everything." />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Clock</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="container">
-        <div id="clock"></div>
-        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
-        <div class="controls">
-            <button onclick="setAlarm()" class="button set-alarm">Iniciar alarma</button>
-            <button onclick="clearAlarm()" class="button clear-alarm">Limpiar</button>
-            <button onclick="HENRY()" class="button HENRY">HENRY</button>
-        </div>
+      <p>Argentina</p>
+      <div id="clockSelf"></div>
+      <div class="miniContainer">
+        <p>Perú</p>
+        <div id="clockPer" class="clock"></div>
+      </div>
+      <div class="miniContainer">
+        <p>Chile</p>
+        <div id="clockChile" class="clock"></div>
+      </div>
+      <div class="miniContainer">
+        <p>México</p>
+        <div id="clockMex" class="clock">México</div>
+      </div>
+      <div class="miniContainer">
+        <p>Colombia</p>
+        <div id="clockCol" class="clock">Colombia</div>
+      </div>
+      <div class="miniContainer">
+        <p>Venezuela</p>
+        <div id="clockVen" class="clock">Venezuela</div>
+      </div>
+      <div class="miniContainer">
+        <p>España</p>
+        <div id="clockEsp" class="clock">España</div>
+      </div>
     </section>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
